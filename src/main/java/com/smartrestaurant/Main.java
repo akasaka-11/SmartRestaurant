@@ -4,13 +4,14 @@ import com.smartrestaurant.builder.Order;
 import com.smartrestaurant.decorator.*;
 import com.smartrestaurant.factory.*;
 import com.smartrestaurant.facade.RestaurantFacade;
-import com.smartrestaurant.model.Meal;
+import com.smartrestaurant.factory.product.Meal;
 import com.smartrestaurant.strategy.*;
 import java.math.BigDecimal;
 import java.util.Scanner;
 import java.util.UUID;
 
 public final class Main {
+
     public static void main(String[] args) {
         RestaurantFacade restaurant = new RestaurantFacade();
         try (Scanner scanner = new Scanner(System.in)) {

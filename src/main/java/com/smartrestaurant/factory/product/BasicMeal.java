@@ -1,4 +1,4 @@
-package com.smartrestaurant.model;
+package com.smartrestaurant.factory.product;
 
 import java.math.BigDecimal;
 import java.util.Objects;

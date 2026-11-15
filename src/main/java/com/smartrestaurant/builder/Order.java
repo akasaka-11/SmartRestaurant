@@ -1,6 +1,6 @@
 package com.smartrestaurant.builder;
 
-import com.smartrestaurant.model.Meal;
+import com.smartrestaurant.factory.product.Meal;
 import java.math.BigDecimal;
 import java.util.*;
 

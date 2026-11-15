@@ -1,6 +1,6 @@
 package com.smartrestaurant.decorator;
 
-import com.smartrestaurant.model.Meal;
+import com.smartrestaurant.factory.product.Meal;
 import java.util.Objects;
 
 public abstract class MealDecorator implements Meal {

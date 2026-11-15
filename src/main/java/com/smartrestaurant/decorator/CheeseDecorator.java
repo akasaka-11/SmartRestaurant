@@ -1,6 +1,6 @@
 package com.smartrestaurant.decorator;
 
-import com.smartrestaurant.model.Meal;
+import com.smartrestaurant.factory.product.Meal;
 import java.math.BigDecimal;
 
 public final class CheeseDecorator extends MealDecorator {

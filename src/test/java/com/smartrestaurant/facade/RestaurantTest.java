@@ -1,9 +1,8 @@
-package com.smartrestaurant;
+package com.smartrestaurant.facade;
 
 import com.smartrestaurant.builder.Order;
 import com.smartrestaurant.decorator.*;
 import com.smartrestaurant.factory.*;
-import com.smartrestaurant.facade.RestaurantFacade;
 import com.smartrestaurant.observer.OrderObserver;
 import com.smartrestaurant.strategy.*;
 import org.junit.jupiter.api.Test;
