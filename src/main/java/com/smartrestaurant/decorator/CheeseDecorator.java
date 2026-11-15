@@ -4,7 +4,19 @@ import com.smartrestaurant.factory.product.Meal;
 import java.math.BigDecimal;
 
 public final class CheeseDecorator extends MealDecorator {
-    public CheeseDecorator(Meal wrapped) { super(wrapped); }
-    @Override public String description() { return wrapped.description() + " + cheese"; }
-    @Override public BigDecimal price() { return wrapped.price().add(new BigDecimal("300.00")); }
+    private static final BigDecimal SURCHARGE = new BigDecimal("300.00");
+
+    public CheeseDecorator(Meal wrapped) {
+        super(wrapped);
+    }
+
+    @Override
+    protected String label() {
+        return "cheese";
+    }
+
+    @Override
+    protected BigDecimal surcharge() {
+        return SURCHARGE;
+    }
 }
